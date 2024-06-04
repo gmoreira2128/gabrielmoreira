@@ -8,14 +8,19 @@ body{
         background-position: center;
 }
 
-.title{
+.titulo{
+    top: 0;
+    left: 0;
     position: absolute;
     text-align: center;
     font-size: 300px;
 }
 
 .Proxima-Pag{
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
+    left: 90%;
+    top: 95%;
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    font-size: 60px;
 }
