@@ -37,7 +37,7 @@ body {
 .cadastro {
     display: flex;
     flex-direction: column;
-   opacity: 0.4;
+    opacity: 0.4;
 }
 
 .form-cadastro {
@@ -65,6 +65,10 @@ body {
     color: white;
     cursor: pointer;
     background: white;
+}
+
+.cadastro-enviado a{
+    text-decoration: none;
 }
 
 .cadastro-enviado:hover {
