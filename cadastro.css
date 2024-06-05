@@ -38,7 +38,7 @@ body {
 .cadastro {
     display: flex;
     flex-direction: column;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .form-cadastro {
