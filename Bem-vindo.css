@@ -40,10 +40,11 @@ text-decoration: none;
 font-size: 30px;
 opacity: 0.4;
 cursor: pointer;
+color: white;
 }
 
 .Proxima-Pag:hover{
-    background-color: rgb(192, 191, 191);
+    background: transparent;
     outline: none;
     border: none;
     border-radius: 8px;
