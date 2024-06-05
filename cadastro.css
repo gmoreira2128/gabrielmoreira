@@ -14,9 +14,10 @@ body {
     width: 420px;
     padding: 40px 50px;
     background-color: white;
+    border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    overflow: none;
     background: transparent;
 }
 
