@@ -73,7 +73,7 @@ body {
 }
 
 .cadastro-enviado:hover {
-    background-color: #45a049;
+    background-color:rgb(156, 154, 154);
     text-decoration: none;
 }
 
@@ -83,4 +83,25 @@ body {
     margin-top: 20px;
     color: white;
     border-radius: 20px;
+}
+
+
+.cancela-cadastro{ 
+border: none;
+border-radius: 4px;
+padding: 10px 20px;
+outline: none;
+text-decoration: none;
+}
+
+.cancela-cadastro a{
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.cancela-cadastro:hover{
+    background-color: rgb(156, 154, 154);
+    text-decoration: none;
 }
