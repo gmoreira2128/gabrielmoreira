@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000080;
+}
+
+
+.menu{
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.titulo {
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.btn {
+    background:transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        left: -100%;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .topo {
+        justify-content: space-around;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+}
+
+.bx-menu{
+    width: 30px;
+    height: 30px;
+    font-size: xx-large;
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+
+.bx-cart{
+    top: 0%;
+    background: transparent;
+    border:none;
+    width: 30px;
+    height: 30px;
+    font-size: xx-large;
+    position: absolute;
+    right: 10px;
+}
+
+.rodape{
+    position: absolute;
+    bottom: 0;
+    background-color: #000080;
+    width: 100%;
+    height: 90px;
+}
+
+.rodape a{
+    width: max-content;
+    color: white;
+    gap: 30px;
+}
+.I {
+    position: absolute;
+    left:25%;
+    top:93%;
+    z-index: 10;
+    color: #fff;
+    text-decoration: none;
+}
+
+.T {
+    position: absolute;
+    left:50%;
+    top:93%;
+    z-index: 10;
+    color: #fff;
+    text-decoration: none;
+}
+
+.F {
+    position: absolute;
+    left:75%;
+    top:93%;
+    z-index: 10;
+    color: #fff;
+    text-decoration: none;
+}
