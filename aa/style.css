@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient();
 }
 
 .topo {
@@ -15,8 +16,7 @@ body {
     background-color: #000080;
 }
 
-
-.menu{
+.menu {
     width: 30px;
     height: 30px;
     border: none;
@@ -24,7 +24,6 @@ body {
     background: transparent;
     cursor: pointer;
 }
-
 
 .titulo {
     margin: 0;
@@ -37,12 +36,17 @@ body {
 
 .sidebar {
     position: fixed;
+    top: 0;
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #111;
+    background-color: #000080;
     padding-top: 50px;
     transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0;
 }
 
 .sidebar ul {
@@ -61,16 +65,13 @@ body {
 }
 
 .btn {
-    background:transparent;
+    background: transparent;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    position: relative;
 }
 
-
-/* Responsivo */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -96,7 +97,7 @@ body {
     }
 }
 
-.bx-menu{
+.bx-menu {
     width: 30px;
     height: 30px;
     font-size: xx-large;
@@ -105,18 +106,18 @@ body {
     top: 30%;
 }
 
-.bx-cart{
-    top: 0%;
+.bx-cart {
+    top: 30%;
     background: transparent;
-    border:none;
+    border: none;
     width: 30px;
     height: 30px;
     font-size: xx-large;
     position: absolute;
-    right: 10px;
+    right: 20px;
 }
 
-.rodape{
+.rodape {
     position: absolute;
     bottom: 0;
     background-color: #000080;
@@ -124,15 +125,16 @@ body {
     height: 90px;
 }
 
-.rodape a{
+.rodape a {
     width: max-content;
     color: white;
     gap: 30px;
 }
+
 .I {
     position: absolute;
-    left:25%;
-    top:93%;
+    left: 25%;
+    top: 93%;
     z-index: 10;
     color: #fff;
     text-decoration: none;
@@ -140,8 +142,8 @@ body {
 
 .T {
     position: absolute;
-    left:50%;
-    top:93%;
+    left: 50%;
+    top: 93%;
     z-index: 10;
     color: #fff;
     text-decoration: none;
@@ -149,8 +151,8 @@ body {
 
 .F {
     position: absolute;
-    left:75%;
-    top:93%;
+    left: 75%;
+    top: 93%;
     z-index: 10;
     color: #fff;
     text-decoration: none;
@@ -158,11 +160,13 @@ body {
 
 .slider {
     display: block;
-    height: 293px;
+    height: 350px;
     width: 600px;
     margin: auto;
     margin-top: 20px;
-    position: relative;
+    position: absolute;
+    top: 0%;
+    left: 36%;
 }
 
 .slider li {
@@ -175,19 +179,22 @@ body {
     height: 100%;
     width: 100%;
     vertical-align: top;
-    
+    mix-blend-mode: multiply;
 }
+
 .slider input {
     display: none;
 }
+
 .slider label {
-    background-color: #000;
-    bottom: 10px;
+    background-color: #000080;
+    border-radius: 15px;
+    bottom: 15px;
     cursor: pointer;
     display: block;
-    height: 10px;
+    height: 15px;
     position: absolute;
-    width: 10px;
+    width: 15px;
     z-index: 10;
 }
 
@@ -202,13 +209,26 @@ body {
 .slider li:nth-child(3) label {
     left: 70px;
 }
+
 .slider img {
     opacity: 0;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .slider li input:checked ~ img {
     opacity: 1;
     visibility: visible;
     z-index: 10;
+}
+
+.adidas {
+    height: 600px;
+}
+
+.nike {
+    height: 600px;
+}
+
+.vans {
+    height: 600px;
 }
